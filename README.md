@@ -35,32 +35,47 @@ we implemented two examples to test our algorithm.
 
 ### 1. Support Vector Machine (SVM) example
 
-To run the SVM examle, use the commend below:
-* mini batch case
+We have implemented two different versions of the solvers. The first version partitions the whole samples into some blocks. For example, use the following command to test the performance of our algorithms with `rcv1` dataset, `32` blocks and `1000` epochs:
+
 ```
-python3 SVM_example.py
+python3 SVM_example.py -d rcv1 -blk 32 -ep 1000
 ```
-* single sample case
+
+The second version use a mini-batch at each iteration. For example, use the following command to test the performance of our algorithms with `w8a` datasets, `single` batch size and `3` epochs:
+
 ```
-python3 SVM_example_single_sample.py
+python3 SVM_example_single_sample.py -d w8a -bat 1 -ep 3
 ```
 
 ### 2. L1-regularized least absolute deviation (LAD) example
 
-To run the LAD examle, use the commend below:
-* mini batch case
+To test the LAD examle, use the commend below:
 ```
 python3 LAD_example.py
 ```
+You can go to the `LAD_example.py` script and define your own data.
 
 ## Testing the convergence rate
 
-To test the convergence of our algorithms for non-strongly convex case, use the commend below:
+Use the commend below to test the convergence of our algorithms for non-strongly convex case with `w8a` datasets, `32` blocks and `1000` epochs:
+
 ```
-python3 compare_c.py
-```
-To test the convergence of our algorithms for strongly convex case, use the commend below:
-```
-python3 compare_c_str_cvx.py
+python3 compare_c.py -d w8a -blk 32 -ep 1000
 ```
 
+The following picture show the result of the above command
+
+Use the commend below to test the convergence of our algorithms for strongly convex case with `w8a` datasets, `32` blocks and `1000` epochs:
+
+```
+python3 compare_c.py -d w8a -blk 32 -ep 1000
+```
+
+The following picture show the result of the above command
+
+Use the commend below to test the convergence of our algorithms for strongly convex case with `a8a` datasets, `32` blocks and `1000` epochs:
+
+```
+python3 compare_c_str_cvx.py -d a8a -blk 32 -ep 1000
+```
+The following picture show the result of the above command
