@@ -63,19 +63,8 @@ Use the commend below to test the convergence of our algorithms for non-strongly
 python3 compare_c.py -d w8a -blk 32 -ep 1000
 ```
 
-The following picture show the result of the above command
-
-Use the commend below to test the convergence of our algorithms for strongly convex case with `w8a` datasets, `32` blocks and `1000` epochs:
-
-```
-python3 compare_c.py -d w8a -blk 32 -ep 1000
-```
-
-The following picture show the result of the above command
-
 Use the commend below to test the convergence of our algorithms for strongly convex case with `a8a` datasets, `32` blocks and `1000` epochs:
 
 ```
 python3 compare_c_str_cvx.py -d a8a -blk 32 -ep 1000
 ```
-The following picture show the result of the above command
