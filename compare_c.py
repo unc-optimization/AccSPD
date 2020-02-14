@@ -15,9 +15,6 @@ If you want to test more SVM data:
     add your data under  the "./data/" folder and change the "data_name" variable in this script.
 
 Notice that this script could run a long time since we run 1000 epochs to observe a stable convergence rate.
-If you want to quickly take a look at our algorithms' convergence rate on the "w8a" data:
-
-    run the last part of this script: "Plot the result".
 """
 
 from __future__ import division, print_function
