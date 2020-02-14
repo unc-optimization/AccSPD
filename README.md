@@ -4,9 +4,7 @@ An accelerated Stochastic Primal Dual Algorithm
 ## Introduction
 This Algorithm can solve the following nonsmooth composite convex optimization problem:
 
-<img src="https://render.githubusercontent.com/render/math?math=$\min_{x \in \mathbb{R}^p}\Big\{ f(x)$"> 
-
-<img src="https://latex.codecogs.com/gif.latex?P(s | O_t )=\text { Probability of a sensor reading value when sleep onset is observed at a time bin } t " />
+<img src="https://render.githubusercontent.com/render/math?math=$\min_{x \in \mathbb{R}^p}\Big\{ f(x) %2B h(x) %2B g(Kx)\big\}$"> 
 
 
 where <img src="https://render.githubusercontent.com/render/math?math=$f:\mathbb{R}^p\to\mathbb{R}\cup\{+\infty\}$"> <img src="https://render.githubusercontent.com/render/math?math=$g:\mathbb{R}^d\to\mathbb{R}\cup\{+\infty\}$"> are proper, closed and convex functions ,<img src="https://render.githubusercontent.com/render/math?math=$h:\mathbb{R}^p\to\mathbb{R}\cup\{+\infty\}$"> is a convex and smooth function, and <img src="https://render.githubusercontent.com/render/math?math=$K:\mathbb{R}^p \to\mathbb{R}^d$"> is a given linear operator. We further assume that the prox-operator of <img src="https://render.githubusercontent.com/render/math?math=$f, g$"> are easy to find.
