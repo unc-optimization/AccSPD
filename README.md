@@ -18,10 +18,11 @@ The code is tested under Python 3.6 and it requires additional packages if you d
 * matplotlib: for plotting
 * sklearn: for loading the LIBSVM data
 * numpy: for scentific computing
+* argparse: for arguments parsing
 
 These packages can be installed by
 ```
-pip3 install scipy pickle matplotlib sklearn numpy
+pip3 install scipy pickle matplotlib sklearn numpy argparse
 ```
 We support LIBSVM datasets which can be downloaded [here](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html). The downloaded dataset should be unzipped and put in the following folder
 
@@ -49,9 +50,9 @@ python3 SVM_example_batch.py -d w8a -bat 1 -ep 3
 
 ### 2. L1-regularized least absolute deviation (LAD) example
 
-To test the LAD examle, use the commend below:
+Use the commend below to test our algorithm on the LAD example with `32` blocks and `300` epoch:
 ```
-python3 LAD_example.py
+python3 LAD_example.py -blk 32 -ep 300
 ```
 You can go to the `LAD_example.py` script and define your own data.
 
