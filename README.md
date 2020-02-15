@@ -35,16 +35,16 @@ we implemented two examples to test our algorithm.
 
 ### 1. Support Vector Machine (SVM) example
 
-We have implemented two different versions of the solvers. The first version partitions the whole samples into some blocks. For example, use the following command to test the performance of our algorithms with `rcv1` dataset, `32` blocks and `1000` epochs:
+We have implemented two different versions of the solvers. The first version partitions the whole samples into some blocks. For example, use the following command to test the performance of our algorithms with `rcv1` dataset, `32` blocks and `300` epochs:
 
 ```
-python3 SVM_example.py -d rcv1 -blk 32 -ep 1000
+python3 SVM_example_block.py -d rcv1 -blk 32 -ep 300
 ```
 
 The second version use a mini-batch at each iteration. For example, use the following command to test the performance of our algorithms with `w8a` datasets, `single` batch size and `3` epochs:
 
 ```
-python3 SVM_example_single_sample.py -d w8a -bat 1 -ep 3
+python3 SVM_example_batch.py -d w8a -bat 1 -ep 3
 ```
 
 ### 2. L1-regularized least absolute deviation (LAD) example
